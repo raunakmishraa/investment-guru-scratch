@@ -176,6 +176,52 @@ $(document).ready(function() {
             submitLoading.hide();
         });
     });
+
+    // Records form submission
+    $('#records-form').submit(function(e) {
+        e.preventDefault();
+        
+        const form = $(this);
+        const submitBtn = form.find('.records-submit-btn');
+        const submitText = submitBtn.find('.submit-text');
+        const submitLoading = submitBtn.find('.submit-loading'); // Reverted selector
+        
+        // Show loading state
+        submitBtn.prop('disabled', true);
+        submitText.hide();
+        submitLoading.show();
+        
+        // Prepare form data
+        const formData = new URLSearchParams();
+        form.serializeArray().forEach(function(item) {
+            formData.append(item.name, item.value);
+        });
+        
+        // Google Apps Script URL for records form
+        const scriptUrl = 'https://script.google.com/macros/s/AKfycbzspAAiZMeZQydb_bsGsQGYqFiIu2NC133SNibHiaqLbfBvUlFhkOUbTuuccPRgjq6LSQ/exec';
+        
+        // Submit form
+        fetch(scriptUrl, {
+            method: 'POST',
+            mode: 'no-cors',
+            body: formData
+        })
+        .then(() => {
+            // Show success message
+            $('#records-success').show();
+            $('.records-form-container').hide();
+        })
+        .catch(() => {
+            // Show error message
+            $('#records-error').show();
+        })
+        .finally(() => {
+            // Reset button state
+            submitBtn.prop('disabled', false);
+            submitText.show();
+            submitLoading.hide();
+        });
+    });
     
     // Set minimum date for consultation form
     const today = new Date().toISOString().split('T')[0];

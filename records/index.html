@@ -105,25 +105,25 @@
             </div>
 
             <!-- Success Message -->
-            <div id="enrollment-success" class="enrollment-success" style="display: none;">
+            <div id="records-success" class="enrollment-success" style="display: none;">
                 <div class="enrollment-success-content">
                     <div class="enrollment-success-icon">
                         <i data-lucide="check-circle"></i>
                     </div>
-                    <h2 class="enrollment-success-title">Enrollment Successful!</h2>
-                    <p class="enrollment-success-message">Welcome to Investment Guru! You'll receive a confirmation email shortly with your course access details.</p>
-                    <button class="enrollment-success-btn" onclick="resetEnrollmentForm()">Enroll Another Course</button>
+                    <h2 class="enrollment-success-title">Record Created Successfully!</h2>
+                    <p class="enrollment-success-message">The record has been successfully submitted.</p>
+                    <button class="enrollment-success-btn" onclick="resetRecordsForm()">Create Another Record</button>
                 </div>
             </div>
 
             <!-- Error Message -->
-            <div id="enrollment-error" class="enrollment-error" style="display: none;">
+            <div id="records-error" class="enrollment-error" style="display: none;">
                 <div class="enrollment-error-content">
                     <div class="enrollment-error-icon">
                         <i data-lucide="x"></i>
                     </div>
                     <h2 class="enrollment-error-title">Enrollment Failed!</h2>
-                    <p class="enrollment-error-message">There was an error processing your enrollment. Please try again.</p>
+                    <p class="enrollment-error-message">There was an error processing this enrollment. Please try again.</p>
                     <button class="enrollment-error-btn" onclick="hideEnrollmentMessages()">Try Again</button>
                 </div>
             </div>
@@ -245,11 +245,11 @@
                         </div>
                     </div> -->
                     <div class="col-lg-12 col-md-12 col-sm-12">
-                        <!-- Enrollment Form -->
-                        <div class="enrollment-form-container">
-                            <h2 class="enrollment-form-title">Initiate The Enrollment</h2>
+                        <!-- Records Form -->
+                        <div class="records-form-container">
+                            <h2 class="enrollment-form-title">Initiate The Enrollment Record</h2>
 
-                            <form id="enrollment-form" class="enrollment-form">
+                            <form id="records-form" class="enrollment-form">
                                 <!-- Personal Information -->
                                 <div class="form-section">
                                     <h3 class="form-section-title">
@@ -333,21 +333,17 @@
                                 </div> -->
 
                                 <!-- Submit Button -->
-                                <button type="submit" class="enrollment-submit-btn">
-                                    <span class="submit-text">Submit Enrollment</span>
+                                <button type="submit" class="records-submit-btn">
+                                    <span class="submit-text">Submit Record</span>
                                     <span class="submit-loading" style="display: none;">
                                         <div class="loading-spinner"></div>
-                                        Processing Enrollment...
+                                        Processing Record...
                                     </span>
                                 </button>
                             </form>
                         </div>
                     </div>
                 </div>
-
-                
-
-                
             </div>
         </div>
     </section>

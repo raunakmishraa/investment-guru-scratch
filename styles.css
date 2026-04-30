@@ -1652,7 +1652,7 @@ body {
 }
 
 .enrollment-success,
-.enrollment-error {
+.enrollment-error ,.records-success,.records-error {
     min-height: 100vh;
     background: linear-gradient(135deg, #f0fdf4 0%, #fef2f2 100%);
     display: flex;
@@ -1852,11 +1852,11 @@ body {
     display: none;
 }
 
-.enrollment-form-container {
+.enrollment-form-container, .records-form-container {
     grid-column: 2;
 }
 
-.enrollment-form-container {
+.enrollment-form-container, .records-form-container {
     background: white;
     border-radius: 16px;
     padding: 2rem;
@@ -1871,7 +1871,7 @@ body {
     margin-bottom: 2rem;
 }
 
-.enrollment-form {
+.enrollment-form, .records-form {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
@@ -1950,7 +1950,7 @@ body {
     text-decoration: underline;
 }
 
-.enrollment-submit-btn {
+.enrollment-submit-btn, .records-submit-btn {
     width: 100%;
     background: linear-gradient(to right, #22c55e, #dc2626);
     color: white;
@@ -1967,12 +1967,12 @@ body {
     gap: 8px;
 }
 
-.enrollment-submit-btn:hover:not(:disabled) {
+.enrollment-submit-btn:hover:not(:disabled), .records-submit-btn:hover:not(:disabled) {
     transform: scale(1.02);
     background: linear-gradient(to right, #16a34a, #b91c1c);
 }
 
-.enrollment-submit-btn:disabled {
+.enrollment-submit-btn:disabled, .records-submit-btn:disabled {
     opacity: 0.5;
     cursor: not-allowed;
 }
