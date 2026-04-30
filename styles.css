@@ -1967,6 +1967,23 @@ body {
     gap: 8px;
 }
 
+.records-submit-btn {
+    width: 100%;
+    background: linear-gradient(to right, #22c55e, #dc2626);
+    color: white;
+    padding: 1rem;
+    border: none;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 1.125rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
 .enrollment-submit-btn:hover:not(:disabled), .records-submit-btn:hover:not(:disabled) {
     transform: scale(1.02);
     background: linear-gradient(to right, #16a34a, #b91c1c);
