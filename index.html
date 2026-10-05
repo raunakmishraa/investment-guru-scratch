@@ -1,608 +1,629 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Investment Guru - Your Path to Financial Success</title>
-    <link rel="icon" type="image/x-icon" href="./logo.jpg">
-    
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    
-    <!-- Lucide Icons -->
-    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
-    
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Investment Guru — expert investment guidance, stock market education and personalized strategies in Nepal.">
+  <title>Investment Guru | Because Every Investor Needs a Guru</title>
 
-    <!-- Bootstrap Import -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/modal-scroll-fix.css">
 </head>
+
 <body>
-    <!-- Header -->
-    <header id="header" class="header">
-        <div class="header-container">
-            <div class="header-content">
-                <!-- Logo -->
-                <div class="logo">
-                    <img src="./logo.jpg" alt="Investment Guru Logo" class="logo-img">
-                    <div class="logo-text">
-                        <h1 class="logo-title">Investment Guru</h1>
-                        <p class="logo-subtitle">Because every investor needs a guru.</p>
-                    </div>
-                </div>
+  <div class="preloader" id="preloader">
+    <div class="loader-mark"><span>IG</span></div>
+    <div class="loader-line"><i></i></div>
+  </div>
 
-                <!-- Desktop Navigation -->
-                <nav class="nav-desktop">
-                    <a href="#services" class="nav-link">
-                        <i data-lucide="book-open-text"></i>
-                        <span>Courses</span>
-                    </a>
-                    <a href="#about" class="nav-link">
-                        <i data-lucide="shield"></i>
-                        <span>About</span>
-                    </a>
-                    <a href="#about_services" class="nav-link">
-                        <i data-lucide="briefcase-business"></i>
-                        <span>Services</span>
-                    </a>
-                    <a href="#contact" class="nav-btn">Contact Us</a>
-                </nav>
+  <header class="site-header" id="header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="brand" aria-label="Investment Guru home">
+        <img src="https://www.investmentguru.com.np/logo.jpg" alt="Investment Guru logo">
+      </a>
+      <button class="menu-toggle" aria-label="Open menu"
+        aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="main-nav">
+        <a href="#home" class="active">Home</a>
+        <a href="trainings.html">Trainings</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+        <a href="consultation.html" class="nav-cta">Free Consultation <span>↗</span></a>
+      </nav>
+    </div>
+  </header>
 
-                <!-- Mobile Menu Button -->
-                <button class="mobile-menu-btn">
-                    <i class="bi bi-list burger"></i>
-                    <i class="bi bi-x cross" style="display: none;"></i>
-                </button>
-            </div>
-
-            <!-- Mobile Menu -->
-            <div class="mobile-menu">
-                <div class="mobile-menu-content">
-                    <a href="#services" class="mobile-nav-link">
-                        <i data-lucide="book-open-text"></i>
-                        <span>Courses</span>
-                    </a>
-                    <a href="#about" class="mobile-nav-link">
-                        <i data-lucide="shield"></i>
-                        <span>About</span>
-                    </a>
-                    <a href="#about_services" class="mobile-nav-link">
-                        <i data-lucide="briefcase-business"></i>
-                        <span>Services</span>
-                    </a>
-                    <div class="mobile-nav-btn-container">
-                        <a href="#contact" class="mobile-nav-btn">Contact Us</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-bg">
-            <div class="hero-bg-element hero-bg-1"></div>
-            <div class="hero-bg-element hero-bg-2"></div>
-            <div class="hero-bg-element hero-bg-3"></div>
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-grid"></div>
+      <div class="hero-glow glow-one"></div>
+      <div class="hero-glow glow-two"></div>
+      <div class="container hero-inner">
+        <div class="hero-copy" data-aos="fade-up" data-aos-duration="900">
+          <div class="eyebrow"><span class="pulse-dot"></span> #1 Investment Advisory in Nepal</div>
+          <h1>Invest smarter.<br><em>Grow with confidence.</em></h1>
+          <p>Expert investment guidance, personalized strategies, and practical stock market education — built to help
+            you make informed decisions and secure your financial future.</p>
+          <div class="hero-actions">
+            <a href="trainings.html" class="btn btn-primary">Start Learning <span>↗</span></a>
+            <a href="consultation.html" class="btn btn-ghost">Free Consultation <span>↗</span></a>
+          </div>
+          <div class="micro-trust"><span>●</span> Built for beginners, traders &amp; serious investors</div>
         </div>
 
-        <div class="hero-container">
-            <div class="hero-content">
-                <!-- Left Content -->
-                <div class="hero-left">
-                    <div class="hero-badge">
-                        <i data-lucide="trending-up"></i>
-                        #1 Investment Advisory in Nepal
-                    </div>
-
-                    <h1 class="hero-title">
-                        Your Path to
-                        <span class="hero-title-gradient"> Financial </span>
-                        Success
-                    </h1>
-
-                    <p class="hero-description">
-                        Expert investment guidance, personalized strategies, and proven results. 
-                        Let us help you build wealth and secure your financial future with confidence.
-                    </p>
-
-                    <div class="hero-buttons">
-                        <a href="#services" class="hero-btn-primary">
-                            Start Learning Today
-                            <i data-lucide="arrow-right"></i>
-                        </a>
-                        <a href="consultation.html" class="hero-btn-secondary">
-                            Free Consultation
-                        </a>
-                    </div>
-
-                    <div class="hero-stats">
-                        <div class="hero-stat">
-                            <div class="hero-stat-icon">
-                                <i data-lucide="target"></i>
-                            </div>
-                            <div class="hero-stat-value">5+</div>
-                            <div class="hero-stat-label">Years Experience</div>
-                        </div>
-                        <div class="hero-stat">
-                            <div class="hero-stat-icon">
-                                <i data-lucide="users"></i>
-                            </div>
-                            <div class="hero-stat-value">500+</div>
-                            <div class="hero-stat-label">Happy Clients</div>
-                        </div>
-                        <div class="hero-stat">
-                            <div class="hero-stat-icon">
-                                <i data-lucide="trending-up"></i>
-                            </div>
-                            <div class="hero-stat-value">25%</div>
-                            <div class="hero-stat-label">Portfolio Growth</div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Right Content -->
-                <div class="hero-right">
-                    <div class="hero-image-container">
-                        <div class="hero-image-bg"></div>
-                        <img src="./logoWObg.png" alt="Investment Guru" class="hero-image">
-                    </div>
-                </div>
+        <div class="hero-visual" data-aos="fade-left" data-aos-delay="150" data-aos-duration="1000">
+          <div class="market-card">
+            <div class="market-top">
+              <div><small>NEPSE • MARKET VIEW</small><strong>2,843.12</strong></div>
+              <div class="gain">+2.84%</div>
             </div>
+            <div class="chart-wrap">
+              <svg class="market-chart" viewBox="0 0 620 290" preserveAspectRatio="none"
+                aria-label="Decorative market chart">
+                <defs>
+                  <linearGradient id="areaFill" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0" stop-color="#15a46a" stop-opacity=".34" />
+                    <stop offset="1" stop-color="#15a46a" stop-opacity="0" />
+                  </linearGradient>
+                </defs>
+                <path class="chart-area"
+                  d="M0,230 C45,218 50,190 92,200 C130,209 145,160 180,178 C220,198 220,130 260,151 C300,171 314,110 350,128 C390,147 405,90 440,112 C475,133 500,72 530,85 C560,98 575,45 620,55 L620,290 L0,290 Z" />
+                <path class="chart-line"
+                  d="M0,230 C45,218 50,190 92,200 C130,209 145,160 180,178 C220,198 220,130 260,151 C300,171 314,110 350,128 C390,147 405,90 440,112 C475,133 500,72 530,85 C560,98 575,45 620,55" />
+                <circle cx="620" cy="55" r="7" />
+              </svg>
+              <div class="chart-labels"><span>09:30</span><span>11:00</span><span>13:00</span><span>15:00</span></div>
+            </div>
+            <div class="market-bottom">
+              <div><span class="mini-icon">↗</span>
+                <div><b>Market Momentum</b><small>Positive trend</small></div>
+              </div>
+              <div class="score"><span>8.7</span>/10</div>
+            </div>
+          </div>
+
+          <div class="hero-stats" id="heroStats"></div>
         </div>
 
-        <!-- Scroll Indicator -->
-        <div class="scroll-indicator">
-            <div class="scroll-indicator-inner">
-                <div class="scroll-indicator-dot"></div>
-            </div>
-        </div>
+      </div>
     </section>
 
-    <!-- Services Section -->
-    <section id="services" class="services">
-        <div class="services-container">
-            <!-- Header -->
-            <div class="section-header">
-                <div class="section-badge">
-                    <i data-lucide="users"></i>
-                    Our Courses
-                </div>
-                
-                <h2 class="section-title">
-                    Empower Your 
-                    <span class="section-title-gradient"> Trading </span>
-                    Journey
-                </h2>
-                
-                <p class="section-description">
-                    From foundational knowledge to advanced strategies and recovery techniques, our comprehensive suite of courses is designed to equip you with the skills to confidently navigate the stock market and achieve your financial goals.
-                </p>
-            </div>
-
-            <!-- Services Grid -->
-            <div class="services-grid">
-                <div class="service-card" data-service="stock-market-101">
-                    <div class="service-icon service-icon-1">
-                        <i data-lucide="trending-up"></i>
-                    </div>
-                    <h3 class="service-title">Stock Market 101: Decode the Basics</h3>
-                    <p class="service-description">Professional portfolio management tailored to your risk tolerance and financial goals.</p>
-                    <ul class="service-features">
-                        <li>Diversified Investments</li>
-                        <li>Risk Assessment</li>
-                        <li>Regular Rebalancing</li>
-                    </ul>
-                    <button class="service-btn">Enroll Now</button>
-                </div>
-
-                <div class="service-card" data-service="technical-analysis">
-                    <div class="service-icon service-icon-2">
-                        <i data-lucide="pie-chart"></i>
-                    </div>
-                    <h3 class="service-title">Advance Course: Technical Analysis Mastery</h3>
-                    <p class="service-description">Strategic investment planning to maximize returns and minimize risks for long-term growth.</p>
-                    <ul class="service-features">
-                        <li>Goal-Based Planning</li>
-                        <li>Asset Allocation</li>
-                        <li>Tax Optimization</li>
-                    </ul>
-                    <button class="service-btn">Enroll Now</button>
-                </div>
-
-                <div class="service-card" data-service="transformation-program">
-                    <div class="service-icon service-icon-3">
-                        <i data-lucide="sparkles"></i>
-                    </div>
-                    <h3 class="service-title">Basic to Advance course: Complete Transformation Program</h3>
-                    <p class="service-description">Comprehensive risk assessment and mitigation strategies to protect your investments.</p>
-                    <ul class="service-features">
-                        <li>Risk Analysis</li>
-                        <li>Insurance Planning</li>
-                        <li>Emergency Funds</li>
-                    </ul>
-                    <button class="service-btn">Enroll Now</button>
-                </div>
-
-                <div class="service-card" data-service="pro-trader">
-                    <div class="service-icon service-icon-4">
-                        <i data-lucide="move"></i>
-                    </div>
-                    <h3 class="service-title">Pro Trader: Mastering the Market Moves</h3>
-                    <p class="service-description">Secure your future with our comprehensive retirement planning and wealth preservation.</p>
-                    <ul class="service-features">
-                        <li>Pension Planning</li>
-                        <li>Wealth Preservation</li>
-                        <li>Income Strategies</li>
-                    </ul>
-                    <button class="service-btn">Enroll Now</button>
-                </div>
-
-                <div class="service-card" data-service="recovery-course">
-                    <div class="service-icon service-icon-5">
-                        <i data-lucide="undo-2"></i>
-                    </div>
-                    <h3 class="service-title">From Loss to Profit: The Recovery Course</h3>
-                    <p class="service-description">Expert tax planning and advisory services to optimize your investment returns.</p>
-                    <ul class="service-features">
-                        <li>Tax Planning</li>
-                        <li>Deduction Strategies</li>
-                        <li>Compliance Support</li>
-                    </ul>
-                    <button class="service-btn">Enroll Now</button>
-                </div>
-            </div>
-
-            <!-- Bottom CTA -->
-            <div class="services-cta">
-                <div class="services-cta-content">
-                    <h3 class="services-cta-title">Ready to Start Your Investment Journey?</h3>
-                    <p class="services-cta-description">
-                        Get personalized investment advice from our expert team. Schedule a free consultation today.
-                    </p>
-                    <button class="services-cta-btn" onclick="window.location.href='consultation.html'">
-                        Schedule Free Consultation
-                    </button>
-                </div>
-            </div>
-        </div>
+    <section class="ticker-section">
+      <div class="ticker-track">
+        <span>SMARTER INVESTING</span><b>✦</b><span>BETTER DECISIONS</span><b>✦</b><span>CONFIDENT
+          INVESTORS</span><b>✦</b><span>NEPAL'S STOCK MARKET</span><b>✦</b>
+        <span>SMARTER INVESTING</span><b>✦</b><span>BETTER DECISIONS</span><b>✦</b><span>CONFIDENT
+          INVESTORS</span><b>✦</b><span>NEPAL'S STOCK MARKET</span><b>✦</b>
+      </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="about-container">
-            <!-- Header -->
-            <div class="section-header">
-                <div class="section-badge">
-                    <i data-lucide="shield"></i>
-                    About Investment Guru
-                </div>
-                
-                <h2 class="section-title">
-                    Building Wealth Through
-                    <span class="section-title-gradient"> Expert Guidance</span>
-                </h2>
-            </div>
-
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-md-7 col-sm-12">
-                        <!-- Left Content -->
-                        <div class="about-left">
-                            <h3 class="about-subtitle">5+ Years of Investment Excellence</h3>
-                            
-                            <p class="about-text">
-                                Investment Guru is a forward-thinking financial education and consulting company dedicated to reshape the way individuals understand and participate in the share market. With a focus on in-depth market analysis, comprehensive training, and personalized mentorship, we provide a full spectrum of services aimed at empowering individuals to make informed, confident, and strategic investment decisions.
-                            </p>
-
-                            <p class="about-text">
-                                Founded with a clear mission — to make the share market simple and easy for everyone — Investment Guru has positioned itself as a trusted partner for beginners, intermediate traders, and seasoned investors alike. We believe that financial literacy is not a privilege but a necessity, and we are committed to making high-quality stock market education accessible to all, regardless of background or experience.
-                            </p>
-
-                            <button class="about-btn">Learn More About Us</button>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-5 col-sm-12">
-                        <!-- Right Content -->
-                        <div class="about-right">
-                            <div class="about-image-container">
-                                <img src="./logo.jpg" alt="Investment Guru" class="about-image">
-                                <div class="about-image-content">
-                                    <h4 class="about-image-title">Investment Guru</h4>
-                                    <p class="about-image-subtitle">Because every investor needs a guru.</p>
-                                </div>
-                                <div class="about-image-bg-1"></div>
-                                <div class="about-image-bg-2"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-
-                
-            </div>
-
-            <!-- Services Include -->
-            <div class="about-services" id="about_services">
-                <h3 class="about-services-title">Our Services Include</h3>
-                
-                <div class="about-services-grid">
-                    <div class="about-service-card">
-                        <div class="about-service-icon about-service-icon-1">
-                            <i data-lucide="alarm-clock"></i>
-                        </div>
-                        <h4 class="about-service-title">Real-time Market Analysis</h4>
-                        <p class="about-service-description">We deliver precise, data-driven insights and expert market interpretation to help clients stay ahead of trends and identify smart opportunities in the stock market.</p>
-                    </div>
-
-                    <div class="about-service-card">
-                        <div class="about-service-icon about-service-icon-2">
-                            <i data-lucide="dollar-sign"></i>
-                        </div>
-                        <h4 class="about-service-title">Stock Market Training</h4>
-                        <p class="about-service-description">Our structured training programs are offered both online and through physical workshops, making it convenient for learners across all regions. These programs are designed to simplify complex market concepts and teach actionable skills.</p>
-                    </div>
-
-                    <div class="about-service-card">
-                        <div class="about-service-icon about-service-icon-3">
-                            <i data-lucide="user-round"></i>
-                        </div>
-                        <h4 class="about-service-title">Personal Consultations</h4>
-                        <p class="about-service-description">We provide one-on-one guidance tailored to individual goals, helping clients build and refine their trading or investing strategies.</p>
-                    </div>
-
-                    <div class="about-service-card">
-                        <div class="about-service-icon about-service-icon-4">
-                            <i data-lucide="rocket"></i>
-                        </div>
-                        <h4 class="about-service-title">Strategy Building & Planning</h4>
-                        <p class="about-service-description">Our experts work closely with clients to develop personalized strategies that align with their financial goals, risk profiles, and market outlooks.</p>
-                    </div>
-                </div>
-            </div>
+    <!-- <section class="section trainings-section" id="trainings">
+      <div class="container">
+        <div class="training-overview" data-aos="fade-up">
+          <div>
+            <div class="eyebrow dark">LEARN • PRACTICE • GROW</div>
+            <h2>Build your market<br><em>knowledge with us.</em></h2>
+          </div>
+          <div class="training-overview-copy">
+            <p>Our share market programs make investing easier to understand, from NEPSE basics and fundamental analysis to technical strategies and disciplined trading.</p>
+            <p>Choose a learning path that fits your level, then apply it with practical guidance and real market context.</p>
+            <a href="trainings.html" class="btn btn-primary">Explore All Trainings <span>↗</span></a>
+          </div>
         </div>
+      </div>
+    </section> -->
+
+    <section class="section services-section" id="services">
+      <div class="container">
+        <div class="section-head centered" data-aos="fade-up">
+          <div class="eyebrow dark">WHAT WE DO</div>
+          <h2>Practical tools for<br><em>better decisions.</em></h2>
+          <p>From learning and record-keeping to personal guidance and portfolio support, we help you move through the market with a clear plan.</p>
+        </div>
+        <div class="services-grid">
+          <article class="service-card" data-aos="fade-up">
+            <div class="service-icon">↗</div><span>01</span>
+            <h3>Share Market Training</h3>
+            <p>Learn the share market from basic to advanced level, including fundamental and technical analysis.</p>
+            <a href="trainings.html">View Trainings →</a>
+          </article>
+          <article class="service-card" data-aos="fade-up" data-aos-delay="80">
+            <div class="service-icon">◎</div><span>02</span>
+            <h3>Trading Journal</h3>
+            <p>Record entries, exits, strategies and results to review your performance and build better trading discipline.</p>
+            <a href="contact.html">Learn More →</a>
+          </article>
+          <article class="service-card" data-aos="fade-up" data-aos-delay="120">
+            <div class="service-icon">◌</div><span>03</span>
+            <h3>Smart Wealth Pro</h3>
+            <p>Explore the Smart Wealth Pro app for iOS and Android. Use promo code <strong>IG20</strong> when you get started.</p>
+            <a class="details-btn">Get Details →</a>
+          </article>
+          <article class="service-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-icon">⌁</div><span>04</span>
+            <h3>Personal Consultation</h3>
+            <p>One-on-one guidance for market basics, investment ideas, financial planning, risk and rule-based trading.</p>
+            <a href="consultation.html">Book Consultation →</a>
+          </article>
+          <article class="service-card" data-aos="fade-up" data-aos-delay="240">
+            <div class="service-icon">◈</div><span>05</span>
+            <h3>Portfolio Management</h3>
+            <p>Track investments, manage risk and maintain a balanced portfolio aligned with your financial goals.</p>
+            <a href="consultation.html">Discuss Your Portfolio →</a>
+          </article>
+          <article class="service-card" data-aos="fade-up" data-aos-delay="320">
+            <div class="service-icon">✦</div><span>06</span>
+            <h3>IG Learning Club</h3>
+            <p>Weekly market overviews, sector and stock analysis, technical concepts, Q&A and trader perspectives. Join for Rs 15,000 per year.</p>
+            <a class="join-btn">Join the Club →</a>
+          </article>
+        </div>
+      </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="contact-container">
-            <!-- Header -->
-            <div class="section-header">
-                <div class="section-badge">
-                    <i data-lucide="message-square"></i>
-                    Get In Touch
-                </div>
-                
-                <h2 class="section-title">
-                    Contact Our
-                    <span class="section-title-gradient"> Expert Team</span>
-                </h2>
-                
-                <p class="section-description">
-                    Ready to start your investment journey? Get in touch with our experienced advisors
-                    for personalized financial guidance and investment solutions.
-                </p>
+    <!-- Smart Wealth Pro Modal -->
+    <div class="swp-modal" id="swpModal" role="dialog" aria-modal="true" aria-labelledby="swpModalLabel" hidden>
+      <div class="swp-modal-overlay" id="swpModalOverlay"></div>
+      <div class="swp-modal-content" role="document">
+        <header class="swp-modal-header">
+          <h2 id="swpModalLabel">Smart Wealth Pro</h2>
+          <button class="swp-modal-close" aria-label="Close modal" id="swpModalClose">&times;</button>
+        </header>
+        <main class="swp-modal-body">
+          <p>Smart Wealth Pro is a premium mobile application available for both iOS and Android devices. With the app you can:</p>
+          <ul>
+            <li>Track your investments in real-time</li>
+            <li>Receive market analysis and alerts</li>
+            <li>Manage your portfolio on the go</li>
+            <li>Access educational resources and trading tools</li>
+          </ul>
+          <p>Use promo code <strong>IG20</strong> at sign-up to get <strong>20% discount</strong> on the premium subscription.</p>
+          <div class="swp-download-links">
+            <a href="https://info.smartwealthpro.com/" class="swp-downlink" target="_blank" rel="noopener">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/path><circle cx="12" cy="12" r="10"/></svg>
+              Download for iOS
+            </a>
+            <a href="https://info.smartwealthpro.com/" class="swp-downlink" target="_blank" rel="noopener">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M7 10l3.47 3L23 8"/path><rect x="2" y="3" width="20" height="18" rx="2" ry="2"/path><line x1="16" y1="13" x2="16" y2="13"/path></svg>
+              Download for Android
+            </a>
+          </div>
+          <p class="swp-promo">Enter promo code: <strong>IG20</strong> for 20% off your subscription.</p>
+        </main>
+      </div>
+    </div>
+
+    <!-- IG Learning Club Modal -->
+    <div class="iclub-modal" id="iclubModal" role="dialog" aria-modal="true" aria-labelledby="iclubModalLabel" hidden>
+      <div class="iclub-modal-overlay" id="iclubModalOverlay"></div>
+      <div class="iclub-modal-content" role="document">
+        <header class="iclub-modal-header">
+          <h2 id="iclubModalLabel">IG Learning Club</h2>
+          <button class="iclub-modal-close" aria-label="Close modal" id="iclubModalClose">&times;</button>
+        </header>
+        <main class="iclub-modal-body">
+          <p>IG Learning Club is our annual membership program designed for investors who want to stay informed and improve their trading discipline throughout the year. Members receive:</p>
+          <ul>
+            <li>Weekly market overviews and analysis</li>
+            <li>Sector and stock analysis</li>
+            <li>Technical concept education</li>
+            <li>Q&A sessions with trading experts</li>
+            <li>Trader perspectives and insights</li>
+          </ul>
+          <p>Join the club for <strong>Rs 15,000 per year</strong> and gain access to comprehensive market education and trading guidance.</p>
+          <div class="iclub-action-btns">
+            <a href="contact.html" class="iclub-btn-primary">Join the Club →</a>
+            <a href="mailto:investmentguru.np@gmail.com" class="iclub-btn-secondary">Contact for Details</a>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <section class="dark-section about-section" id="about">
+      <div class="container about-grid">
+        <div class="about-visual" data-aos="fade-right">
+          <div class="portrait-card">
+            <div class="portrait-bg"></div>
+            <div class="ring ring-one"></div>
+            <div class="ring ring-two"></div>
+            <div class="bull">↗</div>
+            <div class="visual-caption"><span>IG</span>
+              <div><b>Investment Guru</b><small>Because every investor needs a guru.</small></div>
             </div>
-
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-md-12 col-sm-12">
-                        <!-- Contact Form -->
-                        <div class="contact-form-container">
-                            <div class="contact-form-header">
-                                <div class="contact-form-icon">
-                                    <i data-lucide="send"></i>
-                                </div>
-                                <div class="contact-form-title-container">
-                                    <h3 class="contact-form-title">Send us a Message</h3>
-                                    <p class="contact-form-subtitle">We'll get back to you within 24 hours</p>
-                                </div>
-                            </div>
-
-                            <!-- Status Messages -->
-                            <div id="contact-success" class="contact-message contact-success" style="display: none;">
-                                <i data-lucide="check-circle"></i>
-                                <span>Message sent successfully! We'll contact you soon.</span>
-                            </div>
-
-                            <div id="contact-error" class="contact-message contact-error" style="display: none;">
-                                <i data-lucide="alert-circle"></i>
-                                <span>Something went wrong. Please try again.</span>
-                            </div>
-
-                            <div id="contact-submitting" class="contact-message contact-submitting" style="display: none;">
-                                <span>Sending message...</span>
-                            </div>
-
-                            <form id="contact-form" class="contact-form">
-                                <div class="form-row">
-                                    <div class="form-group">
-                                        <label for="name" class="form-label">Full Name *</label>
-                                        <div class="form-input-container">
-                                            <i data-lucide="user"></i>
-                                            <input type="text" id="name" name="name" required class="form-input" placeholder="Your full name">
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label for="email" class="form-label">Email Address *</label>
-                                        <div class="form-input-container">
-                                            <i data-lucide="mail"></i>
-                                            <input type="email" id="email" name="email" required class="form-input" placeholder="your.email@example.com">
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="form-row">
-                                    <div class="form-group">
-                                        <label for="phone" class="form-label">Phone Number</label>
-                                        <div class="form-input-container">
-                                            <i data-lucide="phone"></i>
-                                            <input type="tel" id="phone" name="phone" class="form-input" placeholder="+977-9841234567">
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label for="subject" class="form-label">Subject *</label>
-                                        <input type="text" id="subject" name="subject" required class="form-input" placeholder="What can we help you with?">
-                                    </div>
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="message" class="form-label">Message *</label>
-                                    <textarea id="message" name="message" required rows="4" class="form-textarea" placeholder="Tell us more about your investment goals and how we can help..."></textarea>
-                                </div>
-
-                                <button type="submit" class="contact-submit-btn">
-                                    <span class="submit-text">Send Message</span>
-                                    <span class="submit-loading" style="display: none;">
-                                        <div class="loading-spinner"></div>
-                                        Sending Message...
-                                    </span>
-                                    <i data-lucide="send"></i>
-                                </button>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-12 col-sm-12">
-                        <!-- Contact Information -->
-                        <div class="contact-info">
-                            <!-- Business Hours -->
-                            <div class="contact-info-card">
-                                <div class="contact-info-header">
-                                    <div class="contact-info-icon contact-info-icon-1">
-                                        <i data-lucide="clock"></i>
-                                    </div>
-                                    <div class="contact-info-content">
-                                        <h4 class="contact-info-title">Business Hours</h4>
-                                        <p class="contact-info-detail">Sun - Fri: 10:00 AM - 6:00 PM</p>
-                                        <!-- <p class="contact-info-detail">Sat: 10:00 AM - 4:00 PM</p> -->
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Google Maps -->
-                            <div class="contact-map-container">
-                                <h4 class="contact-map-title">
-                                    <i data-lucide="map-pin"></i>
-                                    Find Us
-                                </h4>
-
-                                <div class="contact-map">
-                                    <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d883.150979613664!2d85.32829626956001!3d27.69863418593248!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjfCsDQxJzU1LjEiTiA4NcKwMTknNDQuMiJF!5e0!3m2!1sen!2snp!4v1753511424217!5m2!1sen!2snp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    
-                                </div>
-
-                                <div class="contact-map-info">
-                                    <p class="contact-map-detail">
-                                        <strong>Address:</strong> Ghattekulo, Anamnagar, Kathmandu, Nepal
-                                    </p>
-                                    <p class="contact-map-detail">
-                                        <strong>Landmark:</strong> Opposite to Bigmart, Anamnagar
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          </div>
+          <div class="orbit-stats" aria-label="Investment Guru highlights">
+            <div class="orbit-ring"></div>
+            <div class="orbit-stat orbit-stat-one"><strong>5+</strong><span>Years<br>Experience</span></div>
+            <div class="orbit-stat orbit-stat-two"><strong>500+</strong><span>Happy<br>Clients</span></div>
+            <div class="orbit-stat orbit-stat-three"><strong>25%</strong><span>Portfolio<br>Growth</span></div>
+          </div>
         </div>
+        <div class="about-copy" data-aos="fade-left">
+          <div class="eyebrow">ABOUT INVESTMENT GURU</div>
+          <h2>Building wealth through<br><em>expert guidance.</em></h2>
+          <p class="lead">Investment Guru is a financial education and consulting company that helps people understand the share market in a simple and practical way. Our goal is to make stock market learning easier for everyone and help individuals make better, more confident investment decisions.</p>
+          <p>We believe that financial knowledge should be accessible to everyone, whether you are completely new to the share market, already have some experience, or are an experienced investor. That is why we provide stock market education, market analysis, training programs, and personalized mentorship designed for different levels of investors.</p>
+          <p>At Investment Guru, we focus on explaining complicated stock market concepts in a simple, practical, and easy-to-understand manner. We believe learning about the market should not feel confusing or difficult. Instead, our approach is to connect knowledge with real market situations so that learners can understand and apply what they learn.</p>
+          <!-- <p>Through our Share Market Training Programs, classes, workshops, and mentoring sessions, we aim to develop more than just investment knowledge. We help learners build the confidence, discipline, patience, and right mindset needed to make informed decisions and grow as investors.</p>
+          <p>Our mission is not simply to teach people how to invest. We want to help people understand the market, avoid uninformed decisions, and become more responsible and confident investors. Through continuous education and practical guidance, Investment Guru is committed to supporting aspiring investors on their journey toward financial growth, better investment decisions, and greater financial independence.</p> -->
+          <a href="about.html" class="btn btn-light">Learn More About Us <span>↗</span></a>
+        </div>
+      </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-container">
-            <!-- Main Footer Content -->
-            <div class="container footer-content">
-                <div class="row">
-                    <div class="col-lg-8 col-md-6 col-sm-12">
-                        <!-- Company Info -->
-                        <div class="footer-company">
-                            <div class="footer-logo">
-                                <img src="./logo.jpg" alt="Investment Guru Logo" class="footer-logo-img">
-                                <div class="footer-logo-text">
-                                    <h3 class="footer-logo-title">Investment Guru</h3>
-                                    <p class="footer-logo-subtitle">Because every investor needs a guru.</p>
-                                </div>
-                            </div>
-                            
-                            <p class="footer-description">
-                                Your trusted partner in building wealth and securing financial freedom. 
-                                With over 5 years of experience, we provide expert investment guidance 
-                                tailored to your unique financial goals.
-                            </p>
+    <!-- Social Media Presence Section -->
+    <section class="social-media-section" id="social" data-aos="fade-up">
+      <div class="container social-inner">
+        <div class="social-eyebrow">Our Presence</div>
+        <h2 class="social-title">Our Social Media Presence</h2>
+        <div class="social-grid" id="socialGrid"></div>
+      </div>
+    </section>
 
-                            <!-- Contact Info -->
-                            <div class="footer-contact">
-                                <div class="footer-contact-item">
-                                    <i class="bi bi-geo-alt"></i>
-                                    <span>Kathmandu, Nepal</span>
-                                </div>
-                                <div class="footer-contact-item">
-                                    <i class="bi bi-telephone"></i>
-                                    <span><a href="tel:+977-1-5313800" class="call-link">01-5313800</a> / <a class="call-link" href="tel:+977-9767473560">9767473560</a> </span>
-                                </div>
-                                <div class="footer-contact-item">
-                                    <i class="bi bi-envelope"></i>
-                                    <span><a href="mailto:investmentguru.np@gmail.com" class="call-link">investmentguru.np@gmail.com</a></span>
-                                </div>
-                                <div class="footer-contact-item">
-                                    <i class="bi bi-whatsapp"></i>
-                                    <span><a href="https://wa.me/9779767473560?" class="call-link">9767473560</a></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12">
-                        <!-- Footer Links -->
-                        <div class="footer-links">
-                            <h4 class="footer-links-title">Company</h4>
-                            <ul class="footer-links-list">
-                                <li><a href="#services">Courses</a></li>
-                                <li><a href="#about">About Us</a></li>
-                                <!-- <li><a href="#team">Our Team</a></li> -->
-                                <li><a href="consultation.html">Schedule a Call</a></li>
-                                <li><a href="enrollment.html">Enroll Now</a></li>
-                                <li><a href="#contact">Contact Us</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <section class="cta-section" id="consult">
+      <div class="cta-orbit"></div>
+      <div class="container cta-inner" data-aos="zoom-in">
+        <div class="eyebrow">READY TO START?</div>
+        <h2>Your next smart decision<br><em>starts here.</em></h2>
+        <p>Get personalized investment advice from our expert team. Schedule a free consultation and take the first step
+          toward your financial goals.</p>
+        <a href="consultation.html" class="btn btn-white">Schedule Free Consultation <span>↗</span></a>
+      </div>
+    </section>
 
-            <!-- Bottom Footer -->
-            <div class="footer-bottom">
-                <p class="footer-copyright">
-                    © 2024 Investment Guru. All rights reserved. | Developed by <a href="https://www.raunakmishra.com.np/" style="text-decoration: none; color: #ffffff;">Raunak Kumar</a>
-                </p>
-                
-                <!-- Social Links -->
-                <div class="footer-social">
-                    <a href="https://www.facebook.com/profile.php?id=61577410238664" class="footer-social-link" aria-label="Facebook">
-                        <i class="bi bi-facebook"></i>
-                    </a>
-                    <a href="https://www.tiktok.com/@investmentguru.np" class="footer-social-link" aria-label="Tiktok">
-                        <i class="bi bi-tiktok"></i>
-                    </a>
-                    <a href="https://www.youtube.com/@InvestmentGuru_np" class="footer-social-link" aria-label="Youtube">
-                        <i class="bi bi-youtube"></i>
-                    </a>
-                    <a href="https://www.instagram.com/investmentguru_np/" class="footer-social-link" aria-label="Instagram">
-                        <i class="bi bi-instagram"></i>
-                    </a>
-                </div>
-            </div>
+    <section class="section process-section">
+      <div class="container">
+        <div class="section-head split" data-aos="fade-up">
+          <div>
+            <div class="eyebrow dark">OUR APPROACH</div>
+            <h2>A clearer way to<br><em>make decisions.</em></h2>
+          </div>
+          <p>We focus on education first, then strategy, discipline and continuous improvement. No unnecessary
+            complexity — just a practical process.</p>
         </div>
-    </footer>
-    
-    <!-- Custom JavaScript -->
-    <script src="script.js"></script>
+        <div class="process-grid">
+          <div class="process-item" data-aos="fade-up"><b>01</b>
+            <div>
+              <h3>Understand</h3>
+              <p>Learn how the market works and understand the forces behind price movement.</p>
+            </div>
+          </div>
+          <div class="process-item" data-aos="fade-up" data-aos-delay="80"><b>02</b>
+            <div>
+              <h3>Analyze</h3>
+              <p>Use structured analysis and relevant information to separate signal from noise.</p>
+            </div>
+          </div>
+          <div class="process-item" data-aos="fade-up" data-aos-delay="160"><b>03</b>
+            <div>
+              <h3>Plan</h3>
+              <p>Build a strategy that aligns with your goals, risk profile and time horizon.</p>
+            </div>
+          </div>
+          <div class="process-item" data-aos="fade-up" data-aos-delay="240"><b>04</b>
+            <div>
+              <h3>Execute</h3>
+              <p>Act with discipline, review your decisions and keep improving your process.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="youtube-media-section" id="youtube-media">
+      <div class="container">
+        <div class="youtube-section-head" data-aos="fade-up">
+          <div>
+            <div class="eyebrow dark">WATCH • LEARN • DISCOVER</div>
+            <h2>Ideas that help you<br><em>invest smarter.</em></h2>
+          </div>
+          <p>Watch Investment Guru's market analysis and educational videos, or switch to The Amit Show for long-form
+            conversations and podcasts.</p>
+        </div>
+        <div class="youtube-tabs" role="tablist" aria-label="YouTube channels">
+          <button class="youtube-tab active" type="button" role="tab" aria-selected="true" data-youtube-tab="investment"><span class="youtube-tab-icon">▶</span><span><b>Investment Guru</b><small>Market Analysis &amp; Education</small></span></button>
+          <button class="youtube-tab" type="button" role="tab" aria-selected="false" data-youtube-tab="podcast"><span class="youtube-tab-icon">◉</span><span><b>The Amit Show</b><small>Conversations &amp; Podcasts</small></span></button>
+          <button class="youtube-tab" type="button" role="tab" aria-selected="false" data-youtube-tab="freeCourses"><span class="youtube-tab-icon">◉</span><span><b>Free Course</b><small>Share Market for Beginners</small></span></button>
+        </div>
+
+        <div class="youtube-panel active" data-youtube-panel="investment" role="tabpanel">
+          <div class="youtube-panel-top">
+            <div><span class="youtube-channel-label">Investment Guru • YouTube</span>
+              <h3>Watch our latest market content.</h3>
+            </div>
+            <a class="youtube-channel-link" href="https://www.youtube.com/@InvestmentGuru_np" target="_blank" rel="noopener">Visit Channel ↗</a>
+          </div>
+          <div class="youtube-video-grid">
+            <div class="youtube-video-card youtube-embed-card">
+              <div class="youtube-embed"><iframe src="https://www.youtube-nocookie.com/embed/vZuukseyYnM?rel=0"
+                  title="Investment Guru YouTube video" loading="lazy"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen></iframe></div>
+              <div class="youtube-video-meta"><span>INVESTMENT GURU</span>
+                <h4>Latest Market Analysis</h4>
+                <p>Watch this Investment Guru video directly without leaving the website.</p>
+              </div>
+            </div>
+            <div class="youtube-video-card youtube-embed-card">
+              <div class="youtube-embed"><iframe src="https://www.youtube-nocookie.com/embed/KnbRdQ-_plE?rel=0"
+                  title="Nepse Alpha Full Tutorial by Investment Guru" loading="lazy"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen></iframe></div>
+              <div class="youtube-video-meta"><span>NEPSE SCHOOL</span>
+                <h4>Nepse Alpha Full Tutorial</h4>
+                <p>Step-by-step educational content for understanding Nepal's stock market tools.</p>
+              </div>
+            </div>
+            <div class="youtube-video-card youtube-embed-card">
+              <div class="youtube-embed"><iframe src="https://www.youtube-nocookie.com/embed/pHiJKzsShPM?rel=0"
+                  title="How to start trading in Nepal Share Market" loading="lazy"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen></iframe></div>
+              <div class="youtube-video-meta"><span>TRADING GUIDE</span>
+                <h4>How to Start Trading in Nepal</h4>
+                <p>A practical beginner-friendly guide to getting started with share-market trading.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="youtube-panel" data-youtube-panel="podcast" role="tabpanel" hidden>
+          <div class="youtube-panel-top">
+            <div><span class="youtube-channel-label">The Amit Show • YouTube</span>
+              <h3>Conversations beyond the charts.</h3>
+            </div><a class="youtube-channel-link" href="https://www.youtube.com/@InvestmentGuru_np" target="_blank"
+              rel="noopener">Watch The Amit Show ↗</a>
+          </div>
+          <div class="youtube-video-grid">
+            <div class="youtube-video-card youtube-embed-card">
+              <div class="youtube-embed"><iframe src="https://www.youtube-nocookie.com/embed/95Qlxoh6dkE?rel=0"
+                  title="The Amit Show - Stock Market Secrets" loading="lazy"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen></iframe></div>
+              <div class="youtube-video-meta"><span>THE AMIT SHOW</span>
+                <h4>Stock Market Secrets</h4>
+                <p>A long-form conversation from The Amit Show, powered by Investment Guru.</p>
+              </div>
+            </div>
+            <div class="youtube-video-card youtube-embed-card">
+              <div class="youtube-embed"><iframe src="https://www.youtube-nocookie.com/embed/95Qlxoh6dkE?rel=0"
+                  title="The Amit Show" loading="lazy"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen></iframe></div>
+              <div class="youtube-video-meta"><span>THE AMIT SHOW</span>
+                <h4>Conversations &amp; Perspectives</h4>
+                <p>Explore investing, entrepreneurship, careers and personal growth through long-form conversations.</p>
+              </div>
+            </div>
+            <div class="youtube-video-card youtube-embed-card">
+              <div class="youtube-embed youtube-embed-cta">
+                <div class="channel-mark">AS</div><a href="https://www.youtube.com/@InvestmentGuru_np" target="_blank"
+                  rel="noopener" class="play-button">▶</a>
+              </div>
+              <div class="youtube-video-meta"><span>PODCAST</span>
+                <h4>Explore The Amit Show</h4>
+                <p>Visit the official Investment Guru channel for more episodes and conversations.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="youtube-panel" data-youtube-panel="freeCourses" role="tabpanel" hidden>
+          <div class="youtube-panel-top">
+            <div><span class="youtube-channel-label">Share Market for Beginners • YouTube</span>
+              <h3>Free Courses for Beginners</h3>
+            </div><a class="youtube-channel-link" href="https://www.youtube.com/playlist?list=PLF-9_vVhVL-bwdr29YIaKekUdjEZPEKNl" target="_blank"
+              rel="noopener">Watch Full Course ↗</a>
+          </div>
+          <div class="youtube-video-grid">
+            <div class="youtube-video-card youtube-embed-card">
+              <div class="youtube-embed">
+                <iframe src="https://www.youtube.com/embed/pHiJKzsShPM?rel=0" title="Share Market for Beginners - Beginners Trading Guide" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+              <div class="youtube-video-meta"><span>Share Market for Beginners</span>
+                <h4>Begineers Trading Guide</h4>
+                <p>How to start trading in Nepal Share Market</p>
+              </div>
+            </div>
+            <div class="youtube-video-card youtube-embed-card">
+              <div class="youtube-embed">
+                <iframe src="https://www.youtube.com/embed/IKQ4VmmaL90?rel=0" title="Share Market for Beginners - NEPSE For Beginners" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+              <div class="youtube-video-meta"><span>Share Market for Beginners</span>
+                <h4>NEPSE For Beginners</h4>
+                <p>Nepali Share Market मा नयाँले कसरी सुरु गर्न सक्छन्?</p>
+              </div>
+            </div>
+            <div class="youtube-video-card youtube-embed-card">
+              <div class="youtube-embed">
+                <iframe src="https://www.youtube.com/embed/s0vGhoJgNdU?rel=0" title="Share Market for Beginners - CDSC Meroshare" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+              <div class="youtube-video-meta"><span>Share Market for Beginners</span>
+                <h4>CDSC Meroshare</h4>
+                <p>मेरो शेयर एप प्रयोग गर्ने सजिलो तरिका! (२०२५)</p>
+              </div>
+            </div>
+          </div>
+          <div class="youtube-video-grid">
+            <div class="youtube-video-card youtube-embed-card">
+              <div class="youtube-embed">
+                <iframe src="https://www.youtube.com/embed/PDDEWuBhYcw?rel=0" title="Share Market for Beginners - NEPSE Online Trading" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+              <div class="youtube-video-meta"><span>Share Market for Beginners</span>
+                <h4>NEPSE ONLINE TRADING</h4>
+                <p>Trading Management System For Beginner Step by Step</p>
+              </div>
+            </div>
+            <div class="youtube-video-card youtube-embed-card">
+              <div class="youtube-embed">
+                <iframe src="https://www.youtube.com/embed/eyvmPPLGA0s?rel=0" title="Share Market for Beginners - NEPSE Collateral Deposit" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+              <div class="youtube-video-meta"><span>Share Market for Beginners</span>
+                <h4>NEPSE COLLATERAL DEPOSIT</h4>
+                <p>How to load Collateral in TMS</p>
+              </div>
+            </div>
+            <div class="youtube-video-card youtube-embed-card">
+              <div class="youtube-embed">
+                <iframe src="https://www.youtube.com/embed/ZJybdewIWBc?rel=0" title="Share Market for Beginners - Secondary Buy & Sell" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+              <div class="youtube-video-meta"><span>Share Market for Beginners</span>
+                <h4>Secondary Buy & Sell</h4>
+                <p>How to Buy and Sell Shares in TMS</p>
+              </div>
+            </div>
+          </div>
+          <div class="youtube-video-grid">
+            <div class="youtube-video-card youtube-embed-card">
+              <div class="youtube-embed">
+                <iframe src="https://www.youtube.com/embed/77V-hGpPO84?rel=0" title="Share Market for Beginners - EDIS & WACC" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+              <div class="youtube-video-meta"><span>Share Market for Beginners</span>
+                <h4>EDIS & WACC</h4>
+                <p>MeroShare कसरी Transfer गर्ने?</p>
+              </div>
+            </div>
+            <div class="youtube-video-card youtube-embed-card">
+              <div class="youtube-embed">
+                <iframe src="https://www.youtube.com/embed/6fpIU1ogw1c?rel=0" title="Share Market for Beginners - Trading Journal" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+              <div class="youtube-video-meta"><span>Share Market for Beginners</span>
+                <h4>Trading Journal</h4>
+                <p>Want to improve your trading - Use Trading Journal for First Time in Nepal</p>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-copy" data-aos="fade-right">
+          <div class="eyebrow dark">GET IN TOUCH</div>
+          <h2>Let's talk about<br><em>your next move.</em></h2>
+          <p>Ready to start your investment journey? Get in touch with our experienced advisors for personalized
+            financial guidance and investment solutions.</p>
+          <div class="contact-details" id="contactDetails"></div>
+        </div>
+        <form class="contact-form" id="contactForm" data-aos="fade-left">
+          <div class="form-title"><span>01</span>
+            <div>
+              <h3>Send us a message</h3>
+              <p>We'll get back to you within 24 hours.</p>
+            </div>
+          </div>
+          <label>Full Name *
+            <input type="text" name="name" placeholder="Your full name" required>
+          </label>
+          <div class="form-row">
+            <label>Email Address *
+              <input type="email" name="email" placeholder="your.email@example.com" required>
+            </label>
+            <label>Phone Number
+              <input type="tel" name="phone" placeholder="+977-9841234567">
+            </label>
+          </div>
+          <label>Subject *
+            <input type="text" name="subject" placeholder="What can we help you with?" required>
+          </label>
+          <label>Message *
+            <textarea name="message" rows="5" placeholder="Tell us a little about what you need..." required></textarea>
+          </label>
+          <button class="btn btn-primary full" type="submit">Send Message <span>↗</span></button>
+          <p class="form-status" id="formStatus"></p>
+        </form>
+      </div>
+    </section>
+
+    <section class="faq-section" id="faq">
+      <div class="container">
+        <div class="section-head centered" data-aos="fade-up">
+          <div class="eyebrow">FAQ</div>
+          <h2>Frequently Asked Questions</h2>
+        </div>
+        <div class="faq-grid" data-aos="fade-up" data-aos-delay="100">
+          <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+            <div class="faq-question">
+              <span>What is the IG Learning Club?</span>
+              <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </div>
+            <div class="faq-answer">
+              <p>The IG Learning Club is our annual membership program that provides weekly market overviews, sector and stock analysis, technical concepts, Q&A and trader perspectives. It's designed for investors who want to stay informed and improve their trading discipline throughout the year.</p>
+            </div>
+          </div>
+          <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+            <div class="faq-question">
+              <span>When is the Zoom Session?</span>
+              <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </div>
+            <div class="faq-answer">
+              <p>The IG Learning Club Zoom Session will be conducted every Thursday from 9:00 PM to 10:00 PM. Join live for real-time market analysis, trading strategies, and Q&A with our experts.</p>
+            </div>
+          </div>
+          <div class="faq-item" data-aos="fade-up" data-aos-delay="400">
+            <div class="faq-question">
+              <span>How can I schedule a consultation?</span>
+              <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </div>
+            <div class="faq-answer">
+              <p>You can schedule a free consultation by visiting the consultation page or contacting us directly at +977-9767473560 or investmentguru.np@gmail.com. Our team will help you set up a personalized investment strategy.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- WhatsApp Floating Action Button -->
+  <a href="https://wa.me/9779767473560" class="whatsapp-fab" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" fill="white" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
+  <footer class="footer">
+    <div class="container footer-top">
+      <div class="footer-brand"><img src="https://www.investmentguru.com.np/logo.jpg" alt="Investment Guru logo">
+        <p>Because every investor needs a guru.</p>
+      </div>
+      <div>
+        <h4>Company</h4><a href="trainings.html">Trainings</a><a href="about.html">About Us</a><a
+          href="consultation.html">Schedule a Call</a><a href="enrollment.html">Enroll Now</a><a href="#contact">Contact
+          Us</a>
+      </div>
+      <div>
+        <h4>Services</h4><a href="#services">Market Analysis</a><a href="trainings.html">Training</a><a
+          href="#services">Consultations</a><a href="#services">Strategy Planning</a>
+      </div>
+      <div>
+        <h4>Contact</h4><a href="tel:+97715313800">01-5313800</a><a href="tel:+9779767473560">9767473560</a><a
+          href="mailto:investmentguru.np@gmail.com">investmentguru.np@gmail.com</a>
+        <p>Kathmandu, Nepal</p>
+      </div>
+    </div>
+    <div class="container footer-bottom"><span>© 2026 Investment Guru. All rights reserved.</span><span>Investing
+        involves risk. Make informed decisions.</span></div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.3.8/dist/lenis.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/modal-scroll-fix.js"></script>
 </body>
+
 </html>
